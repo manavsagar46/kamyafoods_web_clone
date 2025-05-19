@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+    
+    /* background-color: bisque; */
+    /* border: solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    height: 14vh;
+    width: auto;
+    position: relative;
+    /* flex: 1; */
+}
+#navbar #logo{
+    height: 100%;
+}
+
+#navbar #logo img{
+    height: 104px; 
+}
+
+#navbar #links{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    position: relative;
+
+    /* border: solid blue; */
+    width: 600px;
+    
+    /* background-color: aqua; */
+    /* padding: 15px; */
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* flex: 1; */
+
+}
+#navbar #links a{
+    color: #001C66;
+    /* border: solid green; */
+    text-decoration: none;
+    padding: 10px;
+}
+
+#navbar #links a:hover{
+    color: #222222;
+}
+
+#navbar #links .store-container .dropdowns{
+    display: none;
+    
+}
+
+#navbar #links .store-container .dropdowns .dropdown{
+    /* display: none; */
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    position: absolute;
+    top: 6vh;
+    left: 13vh;
+
+    background-color: white;
+
+    height: 250px;
+    width: 215px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    /* border: solid red; */
+    padding: 5px;
+
+    border-radius: 12px;
+    border: solid 0.5px rgb(227, 227, 227);
+}
+
+#navbar #links .store-container .dropdown a{
+    color: #1D2D5A;
+    padding: 12px;
+    /* border: solid; */
+    /* border-bottom: 0.2px solid rgb(227, 227, 227); */
+}
+#navbar #links .store-container .dropdown a.one{
+    border-bottom: 0.2px solid rgb(227, 227, 227);
+}
+
+#navbar .dropdown a:hover{
+    color: #222222;
+}
+
+
+#navbar #cart div{
+    background-color: white;    
+    color: rgb(82, 80, 80);
+    border: grey solid 0.5px;
+    padding: 12px 20px;
+}
+
+/* Main css for main content */
+
+/* Hamburger icon (for mobile) */
+.hamburger {
+    display: none;
+    font-size: 26px;
+    color: rgb(0, 28, 102);
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    nav .mid {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background: #f9f9f9;
+        display: none;
+        padding: 10px 15px;
+    }
+
+    #menu-toggle:checked~nav .mid {
+        display: flex;
+    }
+
+    nav .mid>div {
+        padding: 10px 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    nav .dropdown .store-dp {
+        position: relative;
+        top: 0;
+        left: 0;
+        box-shadow: none;
+        border-radius: 0;
+        padding-left: 15px;
+        background: transparent;
+        visibility: visible;
+        opacity: 1;
+        gap: 6px;
+    }
+
+    nav .right {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+        border: none;
+        visibility: hidden;
+    }
+
+    nav .left img {
+        height: 70px;
+        margin-top: 0;
+        padding-left: 0;
+    }
+}
+
+/* Account */
+
+.container {
+    max-width: 1100px;
+    width: 100vw;
+    margin: auto;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 800;
+    color: #0a0a23;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0a0a23;
+    margin-bottom: 25px;
+    padding-top: 20px;
+    font-weight: 800;
+}
+
+.login-form {
+    border: 1px solid #ddd;
+    padding: 30px 25px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.required {
+    color: red;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 40px;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    font-size: 16px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me input {
+    margin-right: 8px;
+}
+
+.eye-icon .fa-solid.fa-eye {
+    padding-bottom: 15px;
+}
+
+button {
+    background-color: #1a094d;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 20%;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #12073b;
+}
+
+.lost-password {
+    margin-top: 20px;
+}
+
+.lost-password a {
+    text-decoration: none;
+    color: #1a094d;
+    font-weight: bold;
+}
+
+.lost-password a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .login-form {
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .eye-icon {
+        right: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+/* ==================== Last Section =================== */
+
+#lastinfo{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    background-color: #1B1464;
+    color: white;
+    /* border: solid red; */
+    display: flex;
+    padding: 50px 220px 60px 120px;
+}
+#lastinfo .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+    
+    /* border: solid green; */
+    
+
+    padding: 10px;
+    height: 400px;
+    width: 395px;
+
+}
+#lastinfo .about .intro{
+    font-size: 14px;
+    font-weight: 300;
+    
+}
+#lastinfo .about h1{
+    font-size: 25px;
+    font-weight: 600;
+
+}
+#lastinfo .about h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+#lastinfo .about .logo img{
+    width: 108px;
+}
+
+#lastinfo .about .social-icons{
+    padding-top: 30px;
+    display: flex;
+    column-gap: 20px;
+}
+
+#lastinfo .about .social-icons a{
+
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#lastinfo .product{
+    width: 280px;
+    font-weight: 300;
+}
+
+#lastinfo .product h2{
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+#lastinfo .product ul li{
+    list-style: none;
+    padding-bottom: 10px;
+    
+}
+
+#lastinfo .product ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#lastinfo .section{
+    width: 280px;
+    font-weight: 300;
+}
+#lastinfo .section h2{
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+#lastinfo .section ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+#lastinfo .section ul li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+
+#lastinfo .contactSection{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+#lastinfo .contactSection h2{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#lastinfo .contactSection div{
+    font-weight: 300; 
+}
+
+/* ============== footer ============= */
+
+footer{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 0px;
+    
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}

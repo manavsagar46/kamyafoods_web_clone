@@ -3,6 +3,10 @@
 A simple, responsive website clone of **KamyaFoods**, built using only **HTML** and **CSS**. This project replicates the front-end layout and design of the original KamyaFoods site for learning and practice purposes.
 
 ---
+## 🌐 Live Demo
+
+[Click here to view the live demo](https://kamyafoodsclone.netlify.app/)  
+---
 
 ## 🚀 Features
 

@@ -21,3 +21,8 @@ A simple, responsive website clone of **KamyaFoods**, built using only **HTML** 
 No frameworks or JavaScript were used in this project.
 
 ---
+## 📌 Disclaimer
+- This is not an official Kamyafoods website.
+- It is a front-end practice project built to replicate the layout and design of website.
+
+All trademarks and logos are the property of Kamyafoods.

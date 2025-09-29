@@ -22,7 +22,7 @@ A simple, responsive website clone of **KamyaFoods**, built using only **HTML** 
 - HTML5
 - CSS3
 
-No frameworks or JavaScript were used in this project....
+No frameworks or JavaScript were used in this project...
 
 ---
 ## 📌 Disclaimer

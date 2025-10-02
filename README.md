@@ -1,6 +1,6 @@
 # KamyaFoods 🍴
 
-A simple, responsive website clone of **KamyaFoods**, built using only **HTML** and **CSS**. This project replicates the front-end layout and design of the original KamyaFoods site for learning and practice purposes..
+A simple, responsive website clone of **KamyaFoods**, built using only **HTML** and **CSS**. This project replicates the front-end layout and design of the original KamyaFoods site for learning and practice purposes.
 
 ---
 ## 🌐 Live Demo
